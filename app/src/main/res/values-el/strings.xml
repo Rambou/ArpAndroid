@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Root_Granted">Απόκτησε δικαιώματα Διαχειριστή</string>
+    <string name="CheckBox_ON">Απέκτησες δικαιώματα διαχειριστή</string>
+    <string name="CheckBox_OFF">Δεν έχεις δικαιώματα Root! Πρέπει να έχεις Rooted συσκευή!</string>
+    <string name="header">Η εφαρμογή θέτει μια στατική τιμή της MAC διαύθυνσης στον πίνακα ARP ώστε να σε προστατέψει από MiTM επιθέσεις. Η εφαρμογή χρειάζεται διακαιώματα διαχειριστή για να κάνει την καταχώρηση. Συνεπώς η συσκευή πρέπει να είναι Rooted!</string>
+    <string name="Failed">Απέτυχε να θέσει στατική τιμή στο ARP του Gateway.</string>
+    <string name="Failed_Root">Απέτυχε να θέσει στατική τιμή στο ARP του Gateway, λόγω αποτυχίας root πρόσβασης!</string>
+    <string name="WifiStaticArp_OFF">Wifi Static Arp - Προστασία Ανενεργή</string>
+    <string name="WifiStaticArp_ON">Wifi Static Arp - Προστασία Ενεργή</string>
+</resources>

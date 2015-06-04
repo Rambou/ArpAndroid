@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">ArpAndroid</string>
+
+    <string name="header">This app will set an static ARP entry on the gateway MAC address each time you connect to a wifi network, to protect your phone from arp spoofing techniques used in MiTM attacks. This app needs root access to add the static arp entry.</string>
+    <string name="CheckBox_ON">You granted Root Access!</string>
+    <string name="CheckBox_OFF">You don\'t have Root Access! You need to be rooted in order to use this app!</string>
+    <string name="Root_Granted">Grand Root permission</string>
+    <string name="WifiIcon" translatable="false">WifiIcon</string>
+    <string name="WifiStaticArp_OFF">Wifi Static Arp - Protection Off</string>
+    <string name="WifiStaticArp_ON">Wifi Static Arp - Protection On</string>
+
+    <string name="Failed">Could not set static ARP on the gateway mac</string>
+    <string name="Failed_Root">Could not set static ARP on the gateway mac, no root access given.</string>
+</resources>
