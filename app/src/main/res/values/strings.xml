@@ -11,4 +11,16 @@
 
     <string name="Failed">Could not set static ARP on the gateway mac</string>
     <string name="Failed_Root">Could not set static ARP on the gateway mac, no root access given.</string>
+    <string name="ArpSpoofing">Start ArpSpoof</string>
+
+    <string name="rootError">An error was encountered while attempting to run as root.  Arpspoof requires root.</string>
+    <string name="successfulInstall">Executable was successfully installed</string>
+    <string name="copyExeTitle">Copy executable for use with terminal.</string>
+    <string name="howTo">\nEnter the IP address of the host you wish to impersonate and press "Begin Spoofing".  If you do not enter an IP address then Arpspoof will attempt to spoof the network\'s gateway.</string>
+    <string name="tcpdumpFilter" translatable="false"> not \'(src host localhost or dst host localhost or arp)\'</string>
+    <string name="BeginSpoof">Begin Spoofing</string>
+    <string name="Target">Target\'s IP</string>
+    <string name="TargetLabel">Target IP(optional):</string>
+    <string name="FilterExp">Tcpdump filter expression(required):</string>
+    <string name="IptoSpoof">Enter the IP address you want to spoof here</string>
 </resources>

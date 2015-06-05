@@ -8,4 +8,14 @@
     <string name="Failed_Root">Απέτυχε να θέσει στατική τιμή στο ARP του Gateway, λόγω αποτυχίας root πρόσβασης!</string>
     <string name="WifiStaticArp_OFF">Wifi Static Arp - Προστασία Ανενεργή</string>
     <string name="WifiStaticArp_ON">Wifi Static Arp - Προστασία Ενεργή</string>
+    <string name="ArpSpoofing">Ξεκίνα ArpSpoof</string>
+    <string name="copyExeTitle">Αντιγραφή του εκτελέσιμου για χρήση στο τερματικό.</string>
+    <string name="rootError">Δεν έχεις δικαιώματα Root! Πρέπει να έχεις Rooted συσκευή για να τρέξεις την εφαρμογή!</string>
+    <string name="successfulInstall">Το εκτελέσιμο εγκαταστάθηκε επιτυχώς!</string>
+    <string name="howTo">Τοποθέτησε την IP του δρομολογητή που θες να προσποιηθείς και πάτα "Ξεκίνα Spoofing". Έαν δεν εισάγεις κάποια IP τότε η εφαρμοφή θα προσπαθήσει να κάνει spoof την πύλη του δικτύου!</string>
+    <string name="BeginSpoof">Ξεκίνα το Spoofing</string>
+    <string name="IptoSpoof">Εισήγαγε την IP που θέλεις να κάνεις spoof!</string>
+    <string name="Target">Διεύθυνση IP Στόχου</string>
+    <string name="FilterExp">Tcpdump filter expression(Απαραίτητο):</string>
+    <string name="TargetLabel">Διεύθυνση IP Στόχου(προαιρετικό):</string>
 </resources>

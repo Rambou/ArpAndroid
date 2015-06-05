@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget35"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/targetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:text="Spoofing: "
+        android:textSize="28sp"></TextView>
+
+    <ListView
+        android:id="@+id/OutputLV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+
+    <CheckBox
+        android:id="@+id/forward_ipv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/forward_ipv6"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:text="Forward ipv4 traffic"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/forward_ipv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:text="Forward ipv6 traffic"></CheckBox>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Stop spoofing"
+        bootstrap:bb_icon_right="fa-ban"
+        bootstrap:bb_type="danger" />
+</LinearLayout>

@@ -1,6 +1,8 @@
 package gr.rambou.arpandroid;
 
+import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -50,5 +52,22 @@ public class MainActivity extends AppCompatActivity {
 
         //Set Reciever RootStatus
         receiver.setRooted(rooted);
+    }
+
+    public void StartSpoofButton_clicked(View v) {
+        //Check if root is enabled
+        CheckBox ck = (CheckBox) findViewById(R.id.checkbox);
+        if (ck.isChecked()) {
+            //Start activity ArpSpoof
+            Intent i = new Intent(MainActivity.this, arpspoof.Arpspoof.class);
+            startActivity(i);
+        } else {
+            Toast.makeText(getApplicationContext(), R.string.CheckBox_OFF, Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void Image_clicked(View v) {
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Rambou"));
+        startActivity(i);
     }
 }

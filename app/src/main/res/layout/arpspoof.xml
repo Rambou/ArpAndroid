@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget28"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/BeginSpoof"
+        bootstrap:bb_icon_right="fa-flash"
+        bootstrap:bb_type="success" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/widget33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Host IP address(optional):"
+                android:textSize="22sp"></TextView>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/gateway"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:hint="@string/IptoSpoof"
+                bootstrapbutton:be_roundedCorners="true"
+                bootstrapbutton:be_state="success" />
+
+            <TextView
+                android:id="@+id/infotv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/howTo"
+                android:textSize="18sp"></TextView>
+
+            <CheckBox
+                android:id="@+id/advancedCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Show advanced settings"
+                android:textSize="22sp"></CheckBox>
+
+            <TextView
+                android:id="@+id/targetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target IP(optional):"
+                android:textSize="22sp"
+                android:visibility="gone" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:hint="@string/Target"
+                android:visibility="gone"
+                bootstrapbutton:be_roundedCorners="true"
+                bootstrapbutton:be_state="success" />
+
+            <TextView
+                android:id="@+id/tcpdumpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/FilterExp"
+                android:textSize="22sp"
+                android:visibility="gone"></TextView>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/tcpdumpFilter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="@string/tcpdumpFilter"
+                android:visibility="gone"
+                bootstrapbutton:be_roundedCorners="true"
+                bootstrapbutton:be_state="success" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
