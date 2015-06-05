@@ -2,7 +2,7 @@
 Android tool based on arp security! (Requires root access to work)
 
 ##Table of Contents
-1.[Info - About](https://github.com/Rambou/ArpAndroid#headers-to-examine)
+1.[Info - About](https://github.com/Rambou/ArpAndroid#info---about)
 
 2.[References](https://github.com/Rambou/ArpAndroid#references)
 
