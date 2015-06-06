@@ -15,7 +15,7 @@ An app for android 4.1+ that protects your smartphone from an arp attack, by set
 <img src="https://cloud.githubusercontent.com/assets/4427553/7999496/e3eea8c0-0b54-11e5-8754-5e9095400392.png" alt="Scanning" width="200"/>
 <img src="https://cloud.githubusercontent.com/assets/4427553/7999497/e40e7bf0-0b54-11e5-9d59-2af2aa68f7da.png" alt="Statistics" width="200"/>
 <img src="https://cloud.githubusercontent.com/assets/4427553/7999498/e423fb88-0b54-11e5-963a-defc8b5ab6ba.png" alt="Scanning" width="200"/>
-<img src="https://cloud.githubusercontent.com/assets/4427553/7999499/e427f1a2-0b54-11e5-8981-c431d7a2f68a.png" alt="Statistics" width="300"/>
+<img src="https://cloud.githubusercontent.com/assets/4427553/8019852/16819c44-0c6c-11e5-8ade-d49ad00d00b3.png" alt="Statistics" width="300"/>
 <img src="https://cloud.githubusercontent.com/assets/4427553/8019807/0ce398b0-0c6a-11e5-9d4d-2686da36de9d.png" alt="Statistics" width="300"/>
 </p>
 
