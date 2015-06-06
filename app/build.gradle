@@ -32,4 +32,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile files('libs/RootTools-2.5.jar')
     compile 'com.beardedhen:androidbootstrap:+'
+    compile 'com.github.paolorotolo:appintro:1.1.0'
 }

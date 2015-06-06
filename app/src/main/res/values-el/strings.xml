@@ -18,4 +18,7 @@
     <string name="Target">Διεύθυνση IP Στόχου</string>
     <string name="FilterExp">Tcpdump filter expression(Απαραίτητο):</string>
     <string name="TargetLabel">Διεύθυνση IP Στόχου(προαιρετικό):</string>
+    <string name="welcome">Καλωσήρθατε!</string>
+    <string name="FirstSlide">Η εφαρμογή παρέχει την δυνατότητα να προστατευτείται από, αλλά και να εκτελέσετε ARP επιθέσεις.</string>
+    <string name="SecondSlide">Η εφαρμογή κατασκευάστηκε απο τον Νικόλαο Μπούσιο γνωστός ως Rambou, ως εργασία για μάθημα Πανεπιστημίου.</string>
 </resources>
