@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
     sourceSets.main.jni.srcDirs = [] //To fix the relative path issues with C++ includes
-
     defaultConfig {
-        applicationId "gr.rambou.gr.rambou.arpandroid"
+        applicationId 'gr.rambou.arpandroid'
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
@@ -24,6 +25,8 @@ android {
     }
     compileOptions {
         encoding "UTF-8"
+    }
+    productFlavors {
     }
 }
 
