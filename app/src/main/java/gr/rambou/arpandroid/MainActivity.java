@@ -15,6 +15,7 @@ import com.stericson.RootTools.RootTools;
 public class MainActivity extends AppCompatActivity {
 
     private StaticArp receiver;
+    private boolean rooted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void CheckBox_onClick(View v) {
         CheckBox checkBox = (CheckBox) v;
-        boolean rooted;
         if (checkBox.isChecked()) {
             rooted = true;
         } else {
@@ -49,9 +49,16 @@ public class MainActivity extends AppCompatActivity {
 
         //Now set the CheckBox
         checkBox.setChecked(rooted);
+    }
 
-        //Set Reciever RootStatus
-        receiver.setRooted(rooted);
+    public void StartProtectButton_clicked() {
+        //Check if root is enabled
+        if (rooted) {
+            //Set Reciever RootStatus
+            receiver.setRooted(true);
+        } else {
+            Toast.makeText(getApplicationContext(), R.string.CheckBox_OFF, Toast.LENGTH_LONG).show();
+        }
     }
 
     public void StartSpoofButton_clicked(View v) {

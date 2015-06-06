@@ -23,9 +23,10 @@
     <string name="TargetLabel">Target IP(optional):</string>
     <string name="FilterExp">Tcpdump filter expression(required):</string>
     <string name="IptoSpoof">Enter the IP address you want to spoof here</string>
-    <string name="title_activity_app_intro">Arp Android</string>
+    <string name="title_activity_app_intro" translatable="false">Arp Android</string>
 
     <string name="welcome">Welcome!</string>
+    <string name="Protect">Protect</string>
     <string name="FirstSlide">This app is made to help you protect from ARP attacks and also start ones!</string>
     <string name="SecondSlide">This app made by Nikolaos Bousios A.K.A. Rambou and made as a university project.</string>
 </resources>
