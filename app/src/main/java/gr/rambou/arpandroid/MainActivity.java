@@ -24,9 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Create the receiver
         receiver = new StaticArp(new Handler(), false);
-
-        // Register receiver, Trigger this Broadcast Reciever when device is connected to Wifi
-        registerReceiver(receiver, new IntentFilter("android.net.wifi.WIFI_STATE_CHANGED"));
     }
 
     public void CheckBox_onClick(View v) {
@@ -51,20 +48,24 @@ public class MainActivity extends AppCompatActivity {
         checkBox.setChecked(rooted);
     }
 
-    public void StartProtectButton_clicked() {
+    public void StartSpoofButton_clicked(View v) {
         //Check if root is enabled
         if (rooted) {
             //Set Reciever RootStatus
             receiver.setRooted(true);
+
+            // Register receiver, Trigger this Broadcast Reciever when device is connected to Wifi
+            registerReceiver(receiver, new IntentFilter("android.net.wifi.WIFI_STATE_CHANGED"));
         } else {
             Toast.makeText(getApplicationContext(), R.string.CheckBox_OFF, Toast.LENGTH_LONG).show();
+            if (receiver.getAbortBroadcast())
+                receiver.abortBroadcast();
         }
     }
 
-    public void StartSpoofButton_clicked(View v) {
+    public void StartProtectButton_clicked(View v) {
         //Check if root is enabled
-        CheckBox ck = (CheckBox) findViewById(R.id.checkbox);
-        if (ck.isChecked()) {
+        if (rooted) {
             //Start activity ArpSpoof
             Intent i = new Intent(MainActivity.this, arpspoof.Arpspoof.class);
             startActivity(i);

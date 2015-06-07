@@ -130,8 +130,8 @@ public class StaticArp extends BroadcastReceiver {
         switch (wifiState) {
             case WifiManager.WIFI_STATE_ENABLED:
                 Log.v(TAG, "WIFI_STATE_ENABLED");
-                //if (rooted)
-                new SetStaticArp().execute();
+                if (rooted)
+                    new SetStaticArp().execute();
                 break;
             case WifiManager.WIFI_STATE_DISABLED:
                 Log.v(TAG, "WIFI_STATE_DISABLED");
